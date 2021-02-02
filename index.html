@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><img src="img/logo.png" /></header>
+    <main class="mainContainer">
+      <h1>
+        Aqui podrás validar tu tarjeta de crédito/débito de forma rápida y
+        segura
+      </h1>
+        <section class="prueba">
+        <div id="return" class="volver">
+        <div id="answer">
+          <!-- Respueta si la tarjeta es valida o no  onclick="location.reload(); -->
+        </div>
+        <button
+          type="button"
+          class="btn-primary"
+          id="btnRetun"
+          onclick="location.reload()"
+        >
+          Regresar
+        </button>
+      </div>
+
+      <section class="dataContainer" id="dataContainer">
+        <section class="dataInput" id="dataInput">
+          <div class="dataCard-name">
+
+            <label>Numero de tarjeta</label>
+            <input
+              required
+              type="text"
+              id="cardNumber"
+              name="cardNumber"
+              maxlength="16"
+              autocomplete="off"
+              placeholder="4455289745120085"
+              onkeypress="return (event.charCode >= 48 && event.charCode <=57)"
+            />
+          </div>
+          <div class="dataCard-name">
+            <label>Nombre</label>
+            <input
+              type="text"
+              id="name"
+              maxlength="60"
+              required
+              placeholder="Maria Antonienta de las Nieves"
+            />
+          </div>
+          <div class="horizontal">
+            <div>
+              <label>F.Venc</label> <br />
+              <input type="month" id="date" />
+            </div>
+            <div>
+              <label>CVV</label> <br />
+              <input type="text" id="cvv" placeholder="123" maxlength="3" />
+            </div>
+          </div>
+          <button type="button" name="enter" id="btn-primary" class="btn-primary">
+            Validar
+          </button>
+        </section>       
+      
+        <section>
+          <figure id="cardImage">
+            <img src="img/tarjeta.png" alt="tarjeta" />
+          </figure>
+        </section>
+        </section>
+      </section>
+        <figure class="hand">
+          <img src="img/hand.png" alt="hand" />
+        </figure>
+
+        
+      </main>
+      
+      
+
+    <!-- <section class="contenedor">
+      <div>
+        <img src="img/logo.png">
+        <button type="button" id="1">gua</button>
+      </div>
+      <div>
+        <img src="img/logo.png">
+        <button type="button" id="2">miau</button>
+      </div>
+      <div>
+        <img src="img/logo.png" alt="3">
+        <button type="button" id="3">muu</button>
+      </div>
+    </section>-->
+
+    <!--<article>
+      <main class="container">
+        <section id="dataContainer">
+          <div id="getCard" class="dataCard">
+            <label>Numero de tarjeta</label>
+            <input
+              required
+              type="text"
+              id="cardNumber"
+              name="cardNumber"
+              maxlength="16"
+              autocomplete="off"
+              placeholder="4455289745120085"
+              onkeypress="return (event.charCode >= 48 && event.charCode <=57)"
+            />
+
+            <label>Nombre</label>
+            <input
+              type="text"
+              id="name"
+              maxlength="60"
+              required
+              placeholder="Maria Antonienta de las Nieves"
+            />
+
+            <div class="container">
+              <label>F.Venc</label> <br />
+              <input type="month" id="date" />
+
+              <label>CVV</label> <br />
+              <input type="text" id="cvv" placeholder="123" maxlength="3" />
+            </div>
+            <button
+              type="button"
+              name="enter"
+              id="btn-primary"
+              class="btn-primary"
+            >
+              Validar
+            </button>
+          </div>
+        </section>
+        <section class="cardContainer" id="cardImage">
+          <img src="img/tarjeta.png" />
+        </section>
+      </main>
+    </article>
+
+    <div id="return" class="volver">
+      <div id="answer">
+        <!-- Respueta si la tarjeta es valida o no  onclick="location.reload(); 
+      </div>
+      <button
+        type="button"
+        class="btn-primary"
+        id="btnRetun"
+        onclick="location.reload()"
+      >
+        Regresar
+      </button>
+    </div>
+    <section class="final">
+      <img src="img/hand.png" />
+    </section>-->
+
+    <footer></footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
