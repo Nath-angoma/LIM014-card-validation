@@ -1,5 +1,6 @@
 const validator = {
   isValid: function (creditCardNumber) {
+   // console.log(creditCardNumber);
     let inverCard = creditCardNumber.split("").reverse();
      // console.log(inverCard);
     // creamos una variable para guardar en un array 
@@ -55,7 +56,7 @@ const validator = {
   maskify: (creditCardNumber) => {
     let masked = "" ;
     for (let i = 0; i < creditCardNumber.length; i++) {
-      if (i <= creditCardNumber.length - 4) {
+      if (i <= creditCardNumber.length - 5) {
         masked = masked + "#";
         //console.log(maskify);
       } else {
