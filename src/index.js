@@ -17,6 +17,10 @@ document.getElementById("btn-primary").addEventListener("click", validate);
   let revalidate = document.getElementById("return");
   //let tc  = document.getElementById("cardImage");
 
+  if(cardNum=="" ){
+    alert("Ingrese los datos solicitados");
+    return false;
+    }
 
   /*function validate (validationText) {
   //Empezamos con la validación
