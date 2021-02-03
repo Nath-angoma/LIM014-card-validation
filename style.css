@@ -20,7 +20,7 @@ h1{
     /*width: 1440px;
    /* margin: 10px auto;
     padding: 40px;*/
-    background-color: lavender ;
+    background-color: rgb(252, 252, 252) ;
     display: flex;
     flex-direction: column;
 }
@@ -59,7 +59,7 @@ input[type=text]{
     flex-direction: column;
     margin: 10px;
     padding: 12px;
-    background: #E4E4EA;
+    background: #d3d3d6;
     border-radius: 10px;
     border: none;
     
@@ -76,8 +76,8 @@ input:focus {/*enfocar*/
     border: 4px solid #122c97;
 }
 ::placeholder {
-    color: #4695d6;
-    opacity: 35%;
+    color: #2a97f1;
+    opacity: 45%;
     text-align: center;
   }
   
@@ -150,4 +150,9 @@ input:focus {/*enfocar*/
     display: flex;
     justify-content: center;
     margin: 0px;
+  }
+
+  label{
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
